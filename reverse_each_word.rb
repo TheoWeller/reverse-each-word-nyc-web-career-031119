@@ -6,8 +6,8 @@ end
   split_string.join(" ")
 end
 
-def expect_any_instance_of(Array)
-  Array.collect do |x|
-    x.reverse!
+def reverse_each_word(string)
+  split_string = string.split()
+  split_string.collect {|word| word.reverse}.join(" ")
   end
 end
